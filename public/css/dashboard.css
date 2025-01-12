@@ -1,0 +1,65 @@
+/* สไตล์พื้นฐานของหน้า Dashboard */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+/* ปรับตำแหน่ง h1 ให้ไปที่มุมซ้ายบน */
+h1 {
+    font-size: 2.5em;
+    color: #333;
+    position: absolute;
+    top: 20px; /* ระยะห่างจากขอบบน */
+    left: 20px; /* ระยะห่างจากขอบซ้าย */
+}
+
+/* สไตล์สำหรับกล่องข้อมูลผู้ใช้ */
+.dashboard-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin-top: 60px; /* เว้นระยะจาก h1 */
+}
+
+/* สไตล์สำหรับแต่ละข้อมูล */
+p {
+    font-size: 18px;
+    color: #555;
+    margin: 15px 0;
+}
+
+/* เน้นคำที่สำคัญ เช่น Name, Surname, Email */
+strong {
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* ช่องข้อมูลที่จะแสดง */
+span {
+    font-size: 18px;
+    color: #333;
+    font-weight: normal;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+/* ปรับแต่งกรอบของข้อมูลให้สวยงาม */
+.dashboard-container p {
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+/* เพิ่มการเว้นระยะ */
+.dashboard-container p:last-child {
+    border-bottom: none;
+}

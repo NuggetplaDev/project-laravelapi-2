@@ -1,0 +1,61 @@
+/* สไตล์สำหรับฟอร์มล็อกอิน */
+#loginForm {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ปรับแต่งรูปแบบของ label */
+label {
+    font-size: 16px;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* ปรับแต่ง input fields */
+input[type="username"], input[type="password"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fff;
+    transition: border-color 0.3s;
+}
+
+/* เมื่อ focus อยู่บน input */
+input[type="username"]:focus, input[type="password"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* ปุ่ม Login */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* เมื่อ hover ที่ปุ่ม */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* เพิ่มการจัดการสำหรับข้อความ error หรือข้อผิดพลาด */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}

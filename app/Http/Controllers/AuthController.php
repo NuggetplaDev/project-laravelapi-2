@@ -9,20 +9,20 @@ use App\Models\User;
 
 class AuthenticationController extends Controller
 {
-    // Handle Login Request
-    public function login(Request $request)
-    {
-        // ตรวจสอบข้อมูลจากฟอร์ม login
-    $credentials = $request->only('username', 'password');
+    // // Handle Login Request
+    // public function login(Request $request)
+    // {
+    //     // ตรวจสอบข้อมูลจากฟอร์ม login
+    // $credentials = $request->only('username', 'password');
 
-    if (Auth::attempt($credentials)) {
-        // หากเข้าสู่ระบบสำเร็จ
-        $user = Auth::user();
-        return redirect()->route('/dashboard');
+    // if (Auth::attempt($credentials)) {
+    //     // หากเข้าสู่ระบบสำเร็จ
+    //     $user = Auth::user();
+    //     return redirect()->route('/dashboard');
 
-    } else {
+    // } else {
 
-        return redirect()->back()->withErrors(['login' => 'Invalid credentials']);
-    }
-    }
+    //     return redirect()->back()->withErrors(['login' => 'Invalid credentials']);
+    // }
+    // }
 }
